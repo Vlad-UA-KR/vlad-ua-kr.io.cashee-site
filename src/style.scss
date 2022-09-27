@@ -1,17 +1,17 @@
 //-------------------------------------------------
 
-@import '_iconsfont';
-@import '_normalize';
-@import '_nullstyle';
+@import "_iconsfont";
+@import "_normalize";
+@import "_nullstyle";
 
 //--------------------variables--------------------
 
-$ffl: 'Pacifico';
-$ffr: 'Raleway';
+$ffl: "Pacifico";
+$ffr: "Raleway";
 
 //--------------------templates--------------------
 
-%btn{
+%btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,17 +22,17 @@ $ffr: 'Raleway';
 
 //-------------technical-classes------------------
 
-._container{
+._container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 5px 15px;
 }
 
-._ibg{
+._ibg {
 	position: relative;
 }
 
-._ibg img{
+._ibg img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -44,14 +44,15 @@ $ffr: 'Raleway';
 //------------------------body---------------------
 
 html,
-body{
+body {
 	color: rgb(38, 38, 38);
 	font-size: 17px;
 	font-family: $ffr;
 	font-weight: 300;
+	scroll-behavior: smooth;
 }
 
-.wrapper{
+.wrapper {
 	min-height: 100%;
 	overflow: hidden;
 	display: flex;
@@ -67,8 +68,8 @@ body{
 	position: relative;
 }
 
-.header-blok::before{
-	content: ' ';
+.header-blok::before {
+	content: " ";
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -78,8 +79,8 @@ body{
 	z-index: -5;
 }
 
-@media (max-width:768px){
-	body.lock{
+@media (max-width: 768px) {
+	body.lock {
 		overflow: hidden;
 	}
 }
@@ -93,19 +94,19 @@ body{
 	top: 0;
 	left: 0;
 	z-index: 50;
-	
-	&::before{
-		content: ' ';
+
+	&::before {
+		content: " ";
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		top: 0;
 		left: 0;
-		background: linear-gradient(to right, transparent 20%, #B07CF7);
+		background: linear-gradient(to right, transparent 20%, #b07cf7);
 		z-index: 3;
 	}
 
-	&__container{
+	&__container {
 		display: flex;
 		align-items: center;
 		height: 100%;
@@ -121,8 +122,8 @@ body{
 
 	&__logo {
 		font-family: $ffl;
-   	font-size: 50px;
-   	font-weight: 400;
+		font-size: 50px;
+		font-weight: 400;
 		color: inherit;
 		cursor: default;
 		position: relative;
@@ -151,20 +152,19 @@ body{
 	}
 
 	&__link:hover,
-	&__link:focus{
+	&__link:focus {
 		border-top: 3px solid rgb(255, 96, 51);
 	}
 
-//---------media-----------------------------
+	//---------media-----------------------------
 
-	@media (max-width:768px){
-
-		&{
+	@media (max-width: 768px) {
+		& {
 			height: 75px;
 		}
 
-		&::before{
-			content: ' ';
+		&::before {
+			content: " ";
 			position: absolute;
 			z-index: 2;
 		}
@@ -178,8 +178,8 @@ body{
 		}
 
 		&__burger::before,
-		&__burger::after{
-			content: ' ';
+		&__burger::after {
+			content: " ";
 			background-color: rgb(38, 38, 38);
 			width: 100%;
 			height: 2px;
@@ -188,7 +188,7 @@ body{
 			transition: all 0.3s ease;
 		}
 
-		&__burger span{
+		&__burger span {
 			height: 2px;
 			background-color: rgb(38, 38, 38);
 			position: absolute;
@@ -198,15 +198,15 @@ body{
 			transition: all 0.3s ease;
 		}
 
-		&__burger::before{
+		&__burger::before {
 			top: 0;
 		}
 
-		&__burger::after{
+		&__burger::after {
 			bottom: 0;
 		}
 
-		&__menu{
+		&__menu {
 			position: fixed;
 			top: -100%;
 			left: 0;
@@ -219,40 +219,40 @@ body{
 			overflow: auto;
 		}
 
-		&__list{
+		&__list {
 			display: block;
 			margin: 0;
 		}
 
-		&__link{
+		&__link {
 			font-size: 23px;
 		}
 
-		&__list li{
+		&__list li {
 			margin-bottom: 30px;
 		}
 
-		&__list li:first-child{
+		&__list li:first-child {
 			margin-top: 30px;
 		}
 
 		//---------------burger-js----------------
 
-		&__burger.active::before{
+		&__burger.active::before {
 			transform: rotate(45deg);
 			top: 9px;
 		}
 
-		&__burger.active::after{
+		&__burger.active::after {
 			transform: rotate(-45deg);
 			bottom: 9px;
 		}
 
-		&__burger.active span{
+		&__burger.active span {
 			transform: scale(0);
 		}
 
-		&__menu.active{
+		&__menu.active {
 			top: 0;
 		}
 	}
@@ -268,9 +268,8 @@ body{
 		min-height: 1000px;
 	}
 
-	@media (max-width:767px){
-
-		&__main{
+	@media (max-width: 767px) {
+		&__main {
 			padding-top: 200px;
 		}
 	}
@@ -294,18 +293,18 @@ body{
 		font-size: 20px;
 		margin-top: 30px;
 	}
-	
+
 	&__button:hover,
-	&__button:focus{
+	&__button:focus {
 		background-color: darken($color: rgb(255, 96, 51), $amount: 20%);
-		transition: background-color .2s ease-in;
+		transition: background-color 0.2s ease-in;
 	}
 
-	&__button:active{
+	&__button:active {
 		box-shadow: none;
 	}
 
-	&__skroll{
+	&__skroll {
 		display: block;
 		margin-top: 220px;
 		text-align: center;
@@ -314,7 +313,7 @@ body{
 
 //------------------header-background---
 
-.header-blok__background{
+.header-blok__background {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -325,7 +324,7 @@ body{
 
 //----------------------main-blok---------------------
 
-.main-blok{
+.main-blok {
 	flex: 1 1 auto;
 }
 
@@ -355,7 +354,7 @@ body{
 		min-width: 360px;
 	}
 
-	&__image img{
+	&__image img {
 		max-width: 100%;
 		min-width: 360px;
 	}
@@ -368,16 +367,16 @@ body{
 
 	&__title {
 		font-size: 90px;
-   	font-weight: 700;
-   	padding-left: 70 / 590 * 100%;
+		font-weight: 700;
+		padding-left: 70 / 590 * 100%;
 	}
 
 	&__subtitle {
 		padding-left: 70 / 590 * 100%;
-	 	font-size: 17px;
- 		line-height: 1.588;
- 		text-align: left;
-   	padding-top: 15px;
+		font-size: 17px;
+		line-height: 1.588;
+		text-align: left;
+		padding-top: 15px;
 		max-width: 540px;
 		padding-bottom: 15px;
 	}
@@ -410,7 +409,7 @@ body{
 		flex-direction: column;
 		row-gap: 20px;
 		min-width: 270 / 590 * 100%;
-	
+
 		.left-section__item {
 			width: 400 / 590 * 100%;
 			min-width: 270px;
@@ -422,11 +421,11 @@ body{
 			box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 		}
 
-		.left-section__item:hover{
+		.left-section__item:hover {
 			background-color: darken($color: rgb(255, 255, 255), $amount: 10%);
-			transition: background-color .2s ease-in;
+			transition: background-color 0.2s ease-in;
 		}
-	
+
 		.left-section__text {
 			width: 300 / 400 * 100%;
 			min-height: 100%;
@@ -435,7 +434,7 @@ body{
 			font-weight: 700;
 			line-height: 1.35;
 		}
-	
+
 		.left-section__icon {
 			width: 100 / 400 * 100%;
 			min-height: 100%;
@@ -443,7 +442,7 @@ body{
 			text-align: center;
 		}
 	}
-	
+
 	&__right-section {
 		width: 50%;
 		min-width: 270px;
@@ -454,9 +453,9 @@ body{
 	}
 
 	&__title {
-   	font-size: 90px;
-   	color: rgb(255, 255, 255);
-   	font-weight: 700;
+		font-size: 90px;
+		color: rgb(255, 255, 255);
+		font-weight: 700;
 		margin-top: -75px;
 		width: 100%;
 		height: 100%;
@@ -471,7 +470,7 @@ body{
 		z-index: -1;
 	}
 
-	&__background img{
+	&__background img {
 		width: 462px;
 		height: 527px;
 		position: absolute;
@@ -482,24 +481,24 @@ body{
 	}
 
 	//------media-------------
-	
-	@media (max-width:750px){
-		&__right-section{
+
+	@media (max-width: 750px) {
+		&__right-section {
 			order: -1;
 			min-width: 366px;
 		}
-		&__title{
+		&__title {
 			margin-top: auto;
 			text-align: center;
 			font-size: 75;
 		}
 	}
 
-	@media (max-width:380px){
-		&__right-section{
+	@media (max-width: 380px) {
+		&__right-section {
 			min-width: 270px;
 		}
-		&__title{
+		&__title {
 			font-size: 60px;
 			text-align: center;
 		}
@@ -515,23 +514,23 @@ body{
 
 	&__title {
 		font-size: 90px;
-   	font-weight: 700;
-   	padding-top: 95px;
+		font-weight: 700;
+		padding-top: 95px;
 		text-align: center;
 	}
 
 	&__subtitle {
 		font-size: 17px;
-   	line-height: 1.588;
-   	max-width: 577px;
-   	margin: 0 auto;
+		line-height: 1.588;
+		max-width: 577px;
+		margin: 0 auto;
 		padding-top: 30px;
-   	padding-bottom: 45px;
+		padding-bottom: 45px;
 		text-align: center;
 	}
 
-	@media (max-width:790px){
-		&__title{
+	@media (max-width: 790px) {
+		&__title {
 			font-size: 70px;
 		}
 	}
@@ -548,7 +547,7 @@ body{
 	&__big-image {
 		max-width: 770 / 1170 * 100%;
 		min-width: 370px;
-   	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 	}
 
 	&__container-small-image {
@@ -569,74 +568,74 @@ body{
 		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 	}
 
-	@media (max-width:1200px){
-		&__big-image{
+	@media (max-width: 1200px) {
+		&__big-image {
 			max-width: 770 / 1170 * 100%;
 			min-width: 770px;
 		}
 
-		&__container-small-image{
+		&__container-small-image {
 			flex-direction: row;
 			flex-wrap: wrap;
 			max-width: 770px;
 			min-width: 370px;
 		}
 
-		&__small-image{
+		&__small-image {
 			max-width: 370px;
 		}
 
-		&__normal-image{
+		&__normal-image {
 			max-width: 371px;
 		}
 	}
-	@media (max-width:790px){
-		&__big-image{
+	@media (max-width: 790px) {
+		&__big-image {
 			max-width: 770px;
 			min-width: 340px;
 		}
 
-		&__container-small-image{
+		&__container-small-image {
 			flex-direction: row;
 			max-width: 770px;
 			min-width: 340px;
 			flex-wrap: wrap;
 		}
 
-		&__small-image{
+		&__small-image {
 			max-width: 370px;
 			min-width: 340px;
 		}
 
-		&__normal-image{
+		&__normal-image {
 			max-width: 370px;
 			min-width: 340px;
 		}
 	}
-	@media (max-width:375px){
-		&__big-image{
+	@media (max-width: 375px) {
+		&__big-image {
 			max-width: 770px;
 			min-width: 340px;
 		}
 
-		&__container-small-image{
+		&__container-small-image {
 			max-width: 770px;
 			min-width: 340px;
 		}
 
-		&__small-image{
+		&__small-image {
 			max-width: 770px;
 			min-width: 340px;
 		}
 
-		&__normal-image{
+		&__normal-image {
 			max-width: 100%;
 			min-width: 340px;
 		}
 	}
 }
 
-.gallery__button{
+.gallery__button {
 	@extend %btn;
 	background-color: rgb(85, 133, 162);
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -646,12 +645,12 @@ body{
 }
 
 .gallery__button:hover,
-.gallery__button:focus{
+.gallery__button:focus {
 	background-color: darken($color: rgb(85, 133, 162), $amount: 10%);
-	transition: background-color .2s ease-in;
+	transition: background-color 0.2s ease-in;
 }
 
-.gallery__button:active{
+.gallery__button:active {
 	box-shadow: none;
 }
 
@@ -677,7 +676,7 @@ body{
 		font-weight: 300;
 	}
 
-	&__form{
+	&__form {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 15px 30px;
@@ -693,25 +692,25 @@ body{
 	}
 
 	&__input:hover,
-	&__input:focus{
+	&__input:focus {
 		border: 1px solid rgb(150, 185, 44);
-		transition: background-color .2s ease-in;
+		transition: background-color 0.2s ease-in;
 	}
 
-	&__input::placeholder{
+	&__input::placeholder {
 		font-size: 15px;
 		font-family: inherit;
 		color: rgba(38, 38, 38, 0.502);
 		line-height: 1.8;
-  }
+	}
 
-		&__input:-webkit-autofill,
-		&__input:-webkit-autofill:hover,
-		&__input:-webkit-autofill:focus,
-		&__input:-webkit-autofill:active{
-			-webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
-			-webkit-text-fill-color: black !important;
-}
+	&__input:-webkit-autofill,
+	&__input:-webkit-autofill:hover,
+	&__input:-webkit-autofill:focus,
+	&__input:-webkit-autofill:active {
+		-webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+		-webkit-text-fill-color: black !important;
+	}
 
 	&__button {
 		@extend %btn;
@@ -728,12 +727,12 @@ body{
 	}
 
 	&__button:hover,
-	&__button:focus{
+	&__button:focus {
 		background-color: darken($color: rgb(150, 185, 44), $amount: 10%);
-		transition: background-color .2s ease-in;
+		transition: background-color 0.2s ease-in;
 	}
 
-	&__button:active{
+	&__button:active {
 		box-shadow: none;
 	}
 
@@ -752,7 +751,7 @@ body{
 .blog {
 	width: 100%;
 	min-height: 864px;
-	background-color: #B07CF7;
+	background-color: #b07cf7;
 	color: rgb(255, 255, 255);
 	text-align: center;
 
@@ -781,20 +780,20 @@ body{
 
 	&__button {
 		@extend %btn;
-		background-color: #F72B3B;
+		background-color: #f72b3b;
 		color: inherit;
 		font-size: 20px;
 		margin: 50px auto 100px;
 	}
 
 	&__button:hover,
-	&__button:focus{
-	transition: all 0.2s ease-out;
-	animation: shadow 1.5s infinite linear;
+	&__button:focus {
+		transition: all 0.2s ease-out;
+		animation: shadow 1.5s infinite linear;
 	}
 
-	@media (max-width:1023px){
-		&__main{
+	@media (max-width: 1023px) {
+		&__main {
 			flex-direction: column;
 			align-items: center;
 		}
@@ -802,11 +801,21 @@ body{
 }
 //-------animation-button---------------
 @keyframes shadow {
-    0% {box-shadow: -6px -6px 6px 6px rgba(240, 8, 8, 0.5);}
-    25%{box-shadow: 6px 0px 6px 6px rgba(60, 31, 231, 0.5);}
-    50%{box-shadow: 6px 6px 6px 6px rgba(14, 234, 8, 0.5);}
-    75%{box-shadow: -6px 6px 6px 6px rgba(231, 234, 8, 0.5);}
-    100%{box-shadow: -6px -6px 6px 6px rgba(240, 8, 8, 0.5);}
+	0% {
+		box-shadow: -6px -6px 6px 6px rgba(240, 8, 8, 0.5);
+	}
+	25% {
+		box-shadow: 6px 0px 6px 6px rgba(60, 31, 231, 0.5);
+	}
+	50% {
+		box-shadow: 6px 6px 6px 6px rgba(14, 234, 8, 0.5);
+	}
+	75% {
+		box-shadow: -6px 6px 6px 6px rgba(231, 234, 8, 0.5);
+	}
+	100% {
+		box-shadow: -6px -6px 6px 6px rgba(240, 8, 8, 0.5);
+	}
 }
 //---------------------------------------
 
@@ -818,14 +827,14 @@ body{
 	box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
 	margin-top: 15px;
 
-	&:hover &__date{
+	&:hover &__date {
 		background-color: rgba(250, 1, 1, 0.5);
-		transition: all .1s ease-in;
+		transition: all 0.1s ease-in;
 	}
 
-	&:hover{
+	&:hover {
 		box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
-		transition: all .1s ease-in;
+		transition: all 0.1s ease-in;
 	}
 
 	&__image {
@@ -971,7 +980,7 @@ body{
 		visibility: hidden;
 	}
 
-	&__input:invalid + &__error{
+	&__input:invalid + &__error {
 		visibility: visible;
 	}
 
@@ -988,30 +997,30 @@ body{
 		font-weight: 700;
 	}
 
-	::placeholder{
-		color:rgb(255, 255, 255);
+	::placeholder {
+		color: rgb(255, 255, 255);
 		font-size: 15px;
 		font-family: inherit;
 		font-weight: 300;
-  }
+	}
 
-  &__input:hover,
-  &__area:hover{
-	background-color: darken($color: rgb(0, 196, 196), $amount: 10%);
-  }
+	&__input:hover,
+	&__area:hover {
+		background-color: darken($color: rgb(0, 196, 196), $amount: 10%);
+	}
 
-  &__input:focus,
-  &__area:focus{
-	border-left: 5px solid #355b82;
-  }
+	&__input:focus,
+	&__area:focus {
+		border-left: 5px solid #355b82;
+	}
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px #00c4c4 inset !important;
-    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px #00c4c4 inset !important;
+	-webkit-text-fill-color: rgb(255, 255, 255) !important;
 }
 
 .container-right {
@@ -1020,7 +1029,7 @@ input:-webkit-autofill:active  {
 	min-height: 445px;
 	min-width: 270px;
 
-	& ~ input{
+	& ~ input {
 		margin-top: 200px;
 	}
 
@@ -1044,21 +1053,21 @@ input:-webkit-autofill:active  {
 		cursor: pointer;
 	}
 
-	&__button:hover{
+	&__button:hover {
 		background-color: darken($color: rgb(0, 196, 196), $amount: 10%);
 	}
 }
 
-@media (max-width:719px){
-	.container-right{
+@media (max-width: 719px) {
+	.container-right {
 		padding-left: 0;
 	}
 }
-@media (max-width:569px){
-	.container-right__button{
+@media (max-width: 569px) {
+	.container-right__button {
 		margin-top: 50px;
 	}
-	.footer__container{
+	.footer__container {
 		flex-direction: column-reverse;
 	}
 }
@@ -1070,7 +1079,7 @@ input:-webkit-autofill:active  {
 	text-align: center;
 	color: rgb(185, 185, 185);
 
-	&__container{
+	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -1093,10 +1102,10 @@ input:-webkit-autofill:active  {
 
 	&__text-right {
 		font-size: 15px;
-		line-height: 1.667
+		line-height: 1.667;
 	}
 
-	&__text-right span{
+	&__text-right span {
 		color: red;
 		font-weight: 700;
 	}
