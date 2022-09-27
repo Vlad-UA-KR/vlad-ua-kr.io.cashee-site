@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../../fonts/icons.eot?frtn1c');
+  src:  url('../../fonts/icons.eot?frtn1c#iefix') format('embedded-opentype'),
+    url('../../fonts/icons.ttf?frtn1c') format('truetype'),
+    url('../../fonts/icons.woff?frtn1c') format('woff'),
+    url('../../fonts/icons.svg?frtn1c#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"],
+[class*="_icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-carrot:before {
+  content: "\e900";
+  font-size: 47px;
+  width: 47px;
+  height: 44px;
+  line-height: 100px;
+  justify-content: center;
+}
+._icon-cart:before {
+  content: "\e901";
+  font-size: 47px;
+  width: 47px;
+  height: 44px;
+  line-height: 100px;
+  justify-content: center;
+}
+._icon-hand:before {
+  content: "\e902";
+  font-size: 47px;
+  width: 47px;
+  height: 44px;
+  line-height: 100px;
+  justify-content: center;
+}
+._icon-planet:before {
+  content: "\e903";
+  font-size: 47px;
+  width: 47px;
+  height: 44px;
+  line-height: 100px;
+  justify-content: center;
+}

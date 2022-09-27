@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cashee</title>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!--Header-blok-->
+		<header class="header-blok" id="home">
+			<header class="header-blok__header header">
+				<div class="header__container _container">
+					<div class="header__body">
+						<a href="#" class="header__logo">Cashee</a>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li><a href="#home" class="header__link">home</a></li>
+								<li><a href="#about" class="header__link">about</a></li>
+								<li><a href="#services" class="header__link">services</a></li>
+								<li><a href="#gallery" class="header__link">gallery</a></li>
+								<li><a href="#blog" class="header__link">blog</a></li>
+								<li><a href="#contact" class="header__link">contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="header-blok__main _container">
+				<h1 class="header-blok__title">Fresh Life</h1>
+				<p class="header-blok__subtitle">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+					ad minim veniam, quis nostrud exercitation ullamco.</p>
+				<a href="#" class="header-blok__button" onclick="this.blur();">GET FREE NOW</a>
+				<a href="#about" class="header-blok__skroll"><img src="./img/scroll.png" alt="skroll"
+						title="skroll down"></a>
+				<div class="header-blok__background _ibg">
+					<img src="./img/background_fresh.png" alt="backgroung">
+				</div>
+			</main>
+		</header>
+		<!--Main-blok-->
+		<main class="main-blok">
+			<!--About-page-->
+			<div class="about" id="about">
+				<div class="about__container _container">
+					<div class="about__image">
+						<img src="./img/image_about.png" alt="image">
+					</div>
+					<div class="about__text">
+						<h2 class="about__title">About Us</h2>
+						<p class="about__subtitle">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum.</p>
+						<p class="about__subtitle">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+							voluptatem accusantium
+							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+					</div>
+				</div>
+			</div>
+			<!--Services-page-->
+			<div class="services" id="services">
+				<div class="services__container _container">
+					<div class="services__left-section left-section">
+						<div class="left-section__item">
+							<p class="left-section__text">Online Shopping</p>
+							<div class="left-section__icon _icon-cart"></div>
+						</div>
+						<div class="left-section__item">
+							<p class="left-section__text">Quality Product</p>
+							<div class="left-section__icon _icon-hand"></div>
+						</div>
+						<div class="left-section__item">
+							<p class="left-section__text">Domestic & International Delivery</p>
+							<div class="left-section__icon _icon-planet"></div>
+						</div>
+						<div class="left-section__item">
+							<p class="left-section__text">Well Organized</p>
+							<div class="left-section__icon _icon-carrot"></div>
+						</div>
+					</div>
+					<div class="services__right-section">
+						<h2 class="services__title">Our Services</h2>
+					</div>
+					<div class="services__background _ibg">
+						<img src="./img/services_image.png" alt="image">
+						<img src="./img/services_image-copy.png" alt="image">
+					</div>
+				</div>
+			</div>
+			<!--Gallery-page-->
+			<div class="gallery" id="gallery">
+				<div class="gallery__container _container">
+					<header class="gallery__header">
+						<h2 class="gallery__title">Gallary</h2>
+						<p class="gallery__subtitle">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat.</p>
+					</header>
+					<main class="gallery__main main">
+						<img class="main__big-image" src="./img/image-gallery-big.jpg" alt="image">
+						<div class="main__container-small-image">
+							<img class="main__small-image" src="./img/image-gallery-small_1.jpg" alt="image">
+							<img class="main__small-image" src="./img/image-gallery-small_2.jpg" alt="image">
+						</div>
+						<img class="main__normal-image" src="./img/image-gallery-normal_1.jpg" alt="image">
+						<img class="main__normal-image" src="./img/image-gallery-normal_2.jpg" alt="image">
+					</main>
+					<a class="gallery__button" href="#" onclick="this.blur();">VIEW MORE</a>
+				</div>
+			</div>
+			<!--Subscribe-page-->
+			<div class="subscribe">
+				<div class="subscribe__container _container">
+					<h2 class="subscribe__title">Subscribe To Us</h2>
+					<p class="subscribe__subtitle">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					<form class="subscribe__form" action="" method="get" id="mail-form">
+						<input class="subscribe__input" type="email" name="email" form="mail-form"
+							placeholder="Your email address...">
+						<input class="subscribe__button" type="submit" value="Subscribe" form="mail-form"
+							onclick="this.blur();">
+					</form>
+				</div>
+				<div class="subscribe__background _ibg">
+					<img src="./img/bacground-subscribe.png" alt="background">
+				</div>
+			</div>
+			<!--Blog-page-->
+			<div class="blog" id="blog">
+				<div class="blog__container _container">
+					<header class="blog__header">
+						<h2 class="blog__title">Blog</h2>
+						<p class="blog__subtitle">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate
+							velit.</p>
+					</header>
+					<main class="blog__main">
+						<div class="blog__section section">
+							<img class="section__image" src="./img/background-blog_1.png" alt="image">
+							<div class="section__date">
+								<span class="section__date_top">20</span><br>
+								<span class="section__date_bottom">NOV</span>
+							</div>
+							<h3 class="section__title">Green Smoothies: Too Much of a Good Thing?</h3>
+							<p class="section__subtitle">By Auskteez - 2 hours ago</p>
+						</div>
+						<div class="blog__section section">
+							<img class="section__image" src="./img/background-blog_2.png" alt="image">
+							<div class="section__date">
+								<span class="section__date_top">14</span><br>
+								<span class="section__date_bottom">NOV</span>
+							</div>
+							<h3 class="section__title">Growing Food and a “Thirst” for Innovation</h3>
+							<p class="section__subtitle">By Auskteez - 3 hours ago</p>
+						</div>
+						<div class="blog__section section">
+							<img class="section__image" src="./img/background-blog_3.png" alt="image">
+							<div class="section__date">
+								<span class="section__date_top">10</span><br>
+								<span class="section__date_bottom">NOV</span>
+							</div>
+							<h3 class="section__title">Pesticides & Food: What You Need to Know</h3>
+							<p class="section__subtitle">By Auskteez - 6 hours ago</p>
+						</div>
+					</main>
+					<a class="blog__button" href="#" onclick="this.blur();">VIEW MORE</a>
+				</div>
+			</div>
+		</main>
+		<!--Footer-blok-->
+		<footer class="footer-blok" id="contact">
+			<div class="contact">
+				<div class="contact__container _container">
+					<header class="contact__header">
+						<h2 class="contact__title">Contact</h2>
+						<p class="contact__subtitle">For new projects, ideas, business or anything
+							you'd like to discuss, contact with me!</p>
+					</header>
+					<main class="contact__main">
+						<form class="contact__form" action=" " method="get" id="data">
+							<div class="contact__container-left container-left">
+								<input class="container-left__input" type="text" name="name" id="name" form="data"
+									placeholder="Your name..." autocomplete="on">
+								<input class="container-left__input" type="email" name="email" id="mail" form="data"
+									placeholder="Your phone email...">
+								<input class="container-left__input" type="tel" name="ph-number" id="ph-number" form="data"
+									placeholder="Your phone number..." maxlength="13" minlength="13" required>
+								<div class="container-left__error">Format must be +380</div>
+								<textarea class="container-left__area" name="message" id="message" cols="30" rows="10"
+									maxlength="280" placeholder="Your message..." form="data"></textarea>
+							</div>
+							<div class="contact__container-right container-right">
+								<h3 class="container-right__caption">Adress</h3>
+								<p class="container-right__text">123 City name, Street, City, Country</p>
+								<h3 class="container-right__caption">Email</h3>
+								<p class="container-right__text">cahee@domain.com</p>
+								<h3 class="container-right__caption">Phone</h3>
+								<p class="container-right__text">+012 345 6789</p>
+								<input class="container-right__button" onclick="this.blur();" type="submit" value="Send">
+							</div>
+						</form>
+					</main>
+				</div>
+				<footer class="contact__footer footer">
+					<div class="footer__container _container">
+						<p class="footer__text-left">© 2015 Company. All right reserved.</p>
+						<p class="footer__logo">Cahee</p>
+						<p class="footer__text-right">Made with <span>love</span>
+							by Auskteez</p>
+					</div>
+				</footer>
+				<div class="contact__background _ibg">
+					<img src="./img/background-contact.png" alt="background">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
